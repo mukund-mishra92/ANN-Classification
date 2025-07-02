@@ -3,3 +3,4 @@ data/
 ssh
 ssh.pub
 Models/
+src/logs/
