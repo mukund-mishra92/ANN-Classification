@@ -10,17 +10,17 @@ model = tf.keras.models.load_model('src/customer_churn_model.h5')
 
 ## load the encoders and scaler
 
-with open('/src/label_encoder.pkl', 'rb') as f:
+with open('src/label_encoder.pkl', 'rb') as f:
     label_encoder = pickle.load(f)
 
-with open('/src/one_hot_encode_contr.pkl', 'rb') as f:
+with open('src/one_hot_encode_contr.pkl', 'rb') as f:
     one_hot_encoder_contr = pickle.load(f)
 
-with open('/src/one_hot_encode_subs.pkl', 'rb') as f:
+with open('src/one_hot_encode_subs.pkl', 'rb') as f:
     one_hot_encoder_subs = pickle.load(f)
 
 
-with open('/src/standard_scaler.pkl', 'rb') as f:
+with open('src/standard_scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 st.title('Customer Churn Prediction')
