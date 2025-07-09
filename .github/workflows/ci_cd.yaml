@@ -33,6 +33,6 @@ jobs:
       run: echo "CI passed. Deployment should be triggered via Streamlit Cloud."
     - name: ✅ Run Flake8 Linting
       run: |
-      pip install flake8
-      flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        pip install flake8
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
